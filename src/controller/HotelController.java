@@ -51,13 +51,13 @@ public class HotelController extends HttpServlet {
 		System.out.println(roomtype);
 		System.out.println(rates);
     
-		Hotel hotel=new Hotel(numberOfPersons,roomtype,rates,toDate,fromDate,occupancy);
+		Hotel hotel=new Hotel(numberOfPersons,roomtype,rates,occupancy,fromDate,toDate);
 	
 		hotel.setNoOfPersons(numberOfPersons);
 		hotel.setRates(rates);
-		hotel.setClassType(roomtype);
-		hotel.setFrom(fromDate);
-		hotel.setTo(toDate);
+		hotel.setRoomType(roomtype);
+		hotel.setFromdate(fromDate);
+		hotel.setTodate(toDate);
 	
 		FareCalculator  fare=new FareCalculator();
 		double rate=fare.book(hotel);

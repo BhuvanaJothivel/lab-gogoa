@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>HOTEL</title>
+<title>BUS</title>
 <link rel="stylesheet" type="text/css" href="./assets/newstyle.css"/>
 </head>
 <body>

@@ -2,32 +2,24 @@ package model;
 
 import java.time.LocalDate;
 
-// Type your code
 public class Hotel{
 	private int noOfPersons;
-	private String classType;private int rates;private LocalDate from;
-	private LocalDate to;
-	private String triptype;
-	public Hotel(int noOfPersons, String classType, int rates, LocalDate from, LocalDate to, String triptype) {
-		
-		this.noOfPersons = noOfPersons;
-		this.classType = classType;
-		this.rates = rates;
-		this.from = from;
-		this.to = to;
-		this.triptype = triptype;
-	}
+	private String roomType;
+	private int rates;
+	private String occupancy;
+	private LocalDate fromdate;
+	private LocalDate todate;
 	public int getNoOfPersons() {
 		return noOfPersons;
 	}
 	public void setNoOfPersons(int noOfPersons) {
 		this.noOfPersons = noOfPersons;
 	}
-	public String getClassType() {
-		return classType;
+	public String getRoomType() {
+		return roomType;
 	}
-	public void setClassType(String classType) {
-		this.classType = classType;
+	public void setRoomType(String roomType) {
+		this.roomType = roomType;
 	}
 	public int getRates() {
 		return rates;
@@ -35,23 +27,32 @@ public class Hotel{
 	public void setRates(int rates) {
 		this.rates = rates;
 	}
-	public LocalDate getFrom() {
-		return from;
+	public String getOccupancy() {
+		return occupancy;
 	}
-	public void setFrom(LocalDate from) {
-		this.from = from;
+	public void setOccupancy(String occupancy) {
+		this.occupancy = occupancy;
 	}
-	public LocalDate getTo() {
-		return to;
+	public LocalDate getFromdate() {
+		return fromdate;
 	}
-	public void setTo(LocalDate to) {
-		this.to = to;
+	public void setFromdate(LocalDate fromdate) {
+		this.fromdate = fromdate;
 	}
-	public String getTriptype() {
-		return triptype;
+	public LocalDate getTodate() {
+		return todate;
 	}
-	public void setTriptype(String triptype) {
-		this.triptype = triptype;
+	public void setTodate(LocalDate todate) {
+		this.todate = todate;
+	}
+	public Hotel(int noOfPersons, String roomType, int rates, String occupancy, LocalDate fromdate, LocalDate todate) {
+		super();
+		this.noOfPersons = noOfPersons;
+		this.roomType = roomType;
+		this.rates = rates;
+		this.occupancy = occupancy;
+		this.fromdate = fromdate;
+		this.todate = todate;
 	}
 	
 

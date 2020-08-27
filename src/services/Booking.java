@@ -1,9 +1,11 @@
 package services;
 
-// Type your code
-
-class Booking{
+public class Booking{
 	public double booking(int noOfPersons,int rates) {
-		return (noOfPersons*rates);
+		double totalrate;
+		totalrate=(noOfPersons*rates);
+		return totalrate;
+		
 	}
 }
+
